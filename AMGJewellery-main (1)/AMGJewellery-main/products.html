@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMG Jewelry - Produse</title>
+  <link rel="stylesheet" href="styles/products.css">
+  <link rel="shortcut icon" href="images/Logo circle.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 id="brand-name">AMG Jewelry</h1>
+      <ul class="navigation">
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="products.html">Produse</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <aside id="filter-sidebar" class="filter-sidebar">
+        <!-- <button id="filter-toggle" class="filter-toggle">Show Filters</button> -->
+         <button id="filter-button">
+          <a class="filterIcon" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+         </button>
+        <div id="filter-options" class="filter-options">
+          <h2>Filtre</h2>
+          <!-- Categorii -->
+          <div class="filter-option">
+            <label for="category" class="category">Categorie</label>
+            <div id="category-list" class="filter-list">
+              <div class="filter-item">
+                <input type="checkbox" id="category-all" class="filter-checkbox" data-value="all">
+                <label for="category-all" class="circle-checkbox">Toate</label>
+              </div>
+              <div class="filter-item">
+                <input type="checkbox" id="category-necklaces" class="filter-checkbox" data-value="Necklaces">
+                <label for="category-necklaces" class="circle-checkbox">Coliere</label>
+              </div>
+              <div class="filter-item">
+                <input type="checkbox" id="category-earrings" class="filter-checkbox" data-value="Earrings">
+                <label for="category-earrings" class="circle-checkbox">Cercei</label>
+              </div>
+              <div class="filter-item">
+                <input type="checkbox" id="category-rings" class="filter-checkbox" data-value="Rings">
+                <label for="category-rings" class="circle-checkbox">Inele</label>
+              </div>
+              <div class="filter-item">
+                <input type="checkbox" id="category-bracelets" class="filter-checkbox" data-value="Bracelets">
+                <label for="category-bracelets" class="circle-checkbox">Brățări</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Preț -->
+          <div class="filter-option">
+            <label for="price-range" class="category">Preț</label>
+            <input type="range" id="price-range" class="filter-range" min="0" max="3000" value="3000" step="10">
+            <p>Price: <span id="price-value">MDL0 - MDL3000</span></p>
+          </div>
+
+          <!-- Sortare -->
+          <div class="filter-option">
+            <label for="sort-by" class="category">Sortare</label>
+            <div id="sort-by" class="sort-buttons">
+              <button data-sort="price-low-to-high">Preț: Mai puțin</button>
+              <button data-sort="price-high-to-low">Preț: Mai mult</button>
+              <button data-sort="popularity">Popularity</button>
+            </div>
+          </div>
+          
+          <!-- Buton de închidere -->
+          <!-- <button id="close-filter-button" class="close-filter-button">Close Filters</button> -->
+          
+        </div>
+      </aside>
+      
+      <section id="popular-products">
+        <div class="product-collage" id="productCollage"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 AMG Jewelry. All rights reserved.</p>
+  </footer>
+
+  <script src="script/products.js"></script>
+</body>
+</html>
